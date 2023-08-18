@@ -43,10 +43,26 @@ const Board = () => {
     }
   return (
     <div className="board-container">
+      <h1 style={{ textAlign: "center", color: "rgb(33, 113, 113)", fontSize:"50px"}}>
+        Tik Tak Toe
+      </h1>
       {isWinner ? (
-        <>{isWinner} won the game</>
+        <div className="gameWonText">
+          <div>{isWinner} won the game</div>
+          <button
+            className="playAgainBtn"
+            onClick={() => {
+              setState(Array(9).fill(null));
+            }}
+          >
+            Play Again
+          </button>
+        </div>
       ) : (
         <>
+          <h2 style={{ textAlign: "center", color: "crimson" }}>
+            Player {isXTurn ? "X" : "0"}'s Turn
+          </h2>
           <div className="board-row">
             <Square onClick={() => handleClick(0)} value={state[0]} />
             <Square onClick={() => handleClick(1)} value={state[1]} />
