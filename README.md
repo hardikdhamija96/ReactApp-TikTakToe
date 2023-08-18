@@ -1,6 +1,9 @@
 # Tik Tak Toe Game(Tic Tac Toe/Zero Kaata)
 
-This project implements a Tic Tac Toe game using React. It allows two players to take turns and compete against each other to achieve a winning combination on the game board.
+This project implements a [Tic Tac Toe](https://hardikdhamija-tiktaktoe.netlify.app/) game using React. It allows two players to take turns and compete against each other to achieve a winning combination on the game board.
+
+To Visit Website refer "https://hardikdhamija-tiktaktoe.netlify.app/"
+
 
 ## Prerequisites
 
